@@ -1,0 +1,24 @@
+.titleheadshot {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 10vh;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    --img-url: url(../../../assets/images/perfil.jpg);
+}
+
+.headshot {
+    flex-shrink: 0;
+    margin: 5px 0px 30px 0px;
+    height: calc(150px + 6vw);
+    width: calc(150px + 6vw);
+    border: calc(2px + 0.2vw) solid transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-size: cover;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    background-image: var(--img-url), linear-gradient(to bottom right, #7a7a7a, #353232, #766f7d);
+}

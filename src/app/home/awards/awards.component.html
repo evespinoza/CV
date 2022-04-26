@@ -1,0 +1,24 @@
+<section class="module module-gray" id="awards">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="m-title c-align">
+        <h2>{{head.title}}</h2>
+        <h6>{{head.subtitle}}</h6>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" >
+      <table class="table table-borderless">
+        <tbody>
+          <tr *ngFor="let a of awards;">
+            <td><i class="fabiconawards fa fa-trophy fa-lg text-warning "></i></td>
+            <td>{{ a.title }} - <strong>  {{ a.name }}  </strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</section>

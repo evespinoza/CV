@@ -1,0 +1,30 @@
+<section class="module" id="resume">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="m-title c-align">
+          <h2>{{head.title}}</h2>
+          <h6>{{head.subtitle}}</h6>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="timeline">
+          <li *ngFor="let job of jobs">
+            <div class="timeline-badge"></div>
+            <div class="timeline-panel">
+              <div class="timeline-body">
+                <h5 class="timeline-title">{{job.position}} | {{job.period}}</h5>
+                <h6 class="timeline-description">{{job.company}}  </h6>
+                <div [innerHTML]="job.displayedDescription"></div>
+              </div>
+            </div>
+          </li>
+          <div class="timeline-top"></div>
+        </ul>
+        <div class="text-center"><a class="btn btn-lg btn-gray" target="_blank" href="/assets/docs/cv.pdf" download ><span>Download CV</span></a></div>
+      </div>
+    </div>
+  </div>
+</section>

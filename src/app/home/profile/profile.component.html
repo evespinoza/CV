@@ -1,0 +1,45 @@
+<section class="module" id="profile">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="m-title c-align">
+        <h2>{{title}}</h2>
+        <h6>{{subtitle}}</h6>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="titleheadshot">
+        <div class="headshot"></div>
+      </div>
+    </div>
+    <div class="col-md-5" style="text-align:justify;">
+      <h5>{{profile.title}}</h5>
+      <div [innerHTML]="profile.data"></div>
+    </div>
+    <div class="col-md-4">
+      <h5>{{profile.contact}}</h5>
+
+ 
+      <ul class="">
+        <!-- href="https://wa.me/000000000000" -->
+        <li><a target="_blank" href=""><i class="fabicon fab fa-whatsapp fa-lg"></i>&nbsp;&nbsp; (000)-0000000</a></li>
+        <li><a target="_blank" href="mailto:your_email" ><i class="fabicon fa fa-envelope fa-lg"></i>&nbsp;&nbsp; Your Email </a></li>
+        <li><a href="#" ><i class="fabicon fa fa-map-marker  fa-lg"></i>&nbsp;&nbsp; Your Location</a></li>
+      </ul>
+
+      <div class="profile-widget">
+        <h5>{{profile.sp}}</h5>
+        <ul class="widget-social">
+          <!-- https://fontawesome.com/v4/icons/ -->
+          <li><a target="_blank" href="https://github.com/"><i class="fab fa-github-square fa-lg"></i></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg"></i></a></li>
+          <li><a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook fa-lg"></i></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+</section>
